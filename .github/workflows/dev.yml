@@ -3,7 +3,7 @@ name: Deploy on dev environment
 on:
   push:
     branches:
-      - feature-init
+      - develop
 
 jobs:
   deploy:
