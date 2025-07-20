@@ -1,0 +1,62 @@
+.follow-us-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.follow-us-section h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1rem;
+  color: #444;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base hover */
+.social-icons a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Platform-specific hover backgrounds */
+.social-icons a.youtube:hover {
+  background-color: #ff0000;
+}
+
+.social-icons a.instagram:hover {
+  background-color: #c13584;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #1877f2;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.social-icons a.email:hover {
+  background-color: #d44638;
+}
+
+.social-icons a.whatsapp:hover {
+  background-color: #25d366;
+}

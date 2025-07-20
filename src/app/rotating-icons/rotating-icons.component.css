@@ -1,0 +1,92 @@
+/* Container marquee styling */
+ngx-fast-marquee {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.marquee-icon + .marquee-icon {
+  margin-left: 2rem;
+}
+
+/* Default icon style */
+.marquee-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Optional icon-specific sizes */
+.hungama {
+  height: 1.5rem !important;
+  width: 6rem !important;
+  padding-top: 0.8rem;
+}
+
+.artist {
+  height: 2.5rem !important;
+  width: 2.2rem !important;
+}
+
+.discovery {
+  height: 1.5rem !important;
+  width: 6.5rem !important;
+  padding-top: 0.8rem;
+}
+
+.publicise {
+  height: 2.5rem !important;
+  width: 5rem !important;
+}
+
+.group {
+  height: 2.5rem !important;
+  width: 4rem !important;
+}
+
+.zee {
+  height: 2.5rem !important;
+  width: 4rem !important;
+}
+
+/* Larger sizes on desktop */
+@media (min-width: 768px) {
+  .marquee-icon + .marquee-icon {
+    margin-left: 10rem;
+  }
+  .hungama {
+    height: 2rem !important;
+    width: 7rem !important;
+  }
+
+  .artist {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+
+  .discovery {
+    height: 2rem !important;
+    width: 9rem !important;
+  }
+
+  .publicise {
+    height: 3rem !important;
+    width: 6rem !important;
+  }
+
+  .group {
+    height: 3rem !important;
+    width: 5rem !important;
+  }
+
+  .zee {
+    height: 3rem !important;
+    width: 5rem !important;
+  }
+}

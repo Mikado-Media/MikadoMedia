@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "mikadomedia2"
+  },
+  "targets": {
+    "mikadomedia2": {
+      "hosting": {
+        "dev": ["dev-mikadomedia2"],
+        "prod": ["mikadomedia2"]
+      }
+    }
+  }
+}

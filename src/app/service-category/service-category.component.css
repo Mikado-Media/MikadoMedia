@@ -1,0 +1,57 @@
+.horizontal-wrapper {
+  display: flex;
+  padding: 1rem;
+  overflow-x: auto;
+  position: relative;
+  height: 170px;
+}
+
+.category {
+  flex: 0 0 auto;
+  width: 50%;
+  min-height: 120px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #000;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .category {
+    width: 13.7%;
+  }
+}
+
+.category:hover {
+  z-index: 999;
+  transform: scale(1.05);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.words div {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: roboto;
+}
+
+.section-heading {
+  width: 100%;
+  color: white;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: roboto;
+}

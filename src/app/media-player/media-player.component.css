@@ -1,0 +1,28 @@
+.media-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 33.7%;
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 57%;
+  }
+}
+
+.youtube-player,
+.media-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  background-color: black;
+}
