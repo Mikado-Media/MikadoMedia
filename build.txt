@@ -1,0 +1,9 @@
+:: DEV
+remove-item .\public\dev\*
+ng build --output-path=docs --base-href="/"
+move-item .\docs\browser\* .\public\dev    
+
+:: PROD
+remove-item .\public\prod\*
+ng build --output-path=docs --base-href="/"
+move-item .\docs\browser\* .\public\prod    

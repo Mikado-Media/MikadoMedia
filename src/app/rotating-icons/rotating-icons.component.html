@@ -1,0 +1,16 @@
+<div style="padding-bottom: 1rem">
+  <ngx-fast-marquee
+    speed="medium"
+    direction="left"
+    [autoFill]="true"
+    [pauseOnHover]="true"
+  >
+    <img
+      *ngFor="let icon of icons"
+      [src]="icon"
+      [ngClass]="icon.split('.')[0]"
+      alt="icon"
+      class="marquee-icon"
+    />
+  </ngx-fast-marquee>
+</div>
