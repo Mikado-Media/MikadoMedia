@@ -1,0 +1,16 @@
+<h2 class="section-heading">Service Categories</h2>
+
+<div class="horizontal-wrapper" [@slideInHorizontal]>
+  <div
+    *ngFor="let cat of categories; let i = index"
+    class="category"
+    [style.background]="gradients[i % gradients.length]"
+    [style.marginLeft]="i === 0 ? '0' : '-60px'"
+  >
+    <div class="content">
+      <div class="words">
+        <div *ngFor="let word of cat.split(' ')">{{ word }}</div>
+      </div>
+    </div>
+  </div>
+</div>

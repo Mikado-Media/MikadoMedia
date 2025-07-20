@@ -1,0 +1,28 @@
+<div class="media-container">
+  <ng-container *ngIf="isYouTubeLink(); else localVideo">
+    <div style="justify-content: center; display: flex; width: 100%">
+      <iframe
+        class="youtube-player"
+        [src]="getSafeYouTubeUrl()"
+        frameborder="0"
+        height="560"
+        width="990"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </ng-container>
+
+  <ng-template #localVideo>
+    <video
+      #videoPlayer
+      width="100%"
+      autoplay
+      muted
+      playsinline
+      [src]="mediaSrc"
+      (click)="toggleMute()"
+      (error)="onError($event)"
+    ></video>
+  </ng-template>
+</div>
